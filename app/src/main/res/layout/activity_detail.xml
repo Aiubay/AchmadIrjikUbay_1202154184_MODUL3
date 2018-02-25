@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ubay.achmadirjikubay_1202154184_modul3.detail">
+
+        <TextView
+            android:id="@+id/juduldetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Air"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tulisan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/juduldetail"
+            android:text="@string/dummy" />
+
+        <ImageView
+            android:id="@+id/level"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tulisan"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/images" />
+        <ImageView
+            android:id="@+id/icrbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/level"
+            android:layout_toEndOf="@id/level"
+            android:layout_toRightOf="@id/level"
+            android:src="@drawable/ic_add"
+            android:onClick="increase"
+            />
+        <TextView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/level"
+            android:layout_centerHorizontal="true"
+            android:text="1L"/>
+        <ImageView
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove"
+            android:layout_below="@id/level"
+            android:layout_toLeftOf="@id/level"
+            android:onClick="decrease"/>
+
+
+    </RelativeLayout>
+</ScrollView>
